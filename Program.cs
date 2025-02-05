@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design;
 
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -16,34 +17,50 @@ internal class Program
 
         int daily_Employee_Wage = 0;
         int totalMonthlyEmployeeWage = 0;
-        int work_Hours;
-        for (int i = 1; i <= days_For_Month; i++)
+        int work_Hours = 0;
+        int total_working_hours = 100;
+        int total_hours = 0;
+        while (true)
         {
-            int attendence = random.Next(0, 3);
-            switch (attendence)
+            if (total_hours == total_working_hours)
+                break;
+
+            for (int i = 1; i <= days_For_Month; i++)
             {
-                case 1:
+                int attendence = random.Next(0, 3);
+                switch (attendence)
+                {
+                    case 1:
 
-                    Console.WriteLine("Employee is Full Time");
-                    work_Hours = full_Day_Hours;
-                    daily_Employee_Wage = wage_Per_Hours * work_Hours;
-                    Console.WriteLine($" Day {i} Employee Wage = " + daily_Employee_Wage);
-                    break;
+                        Console.WriteLine("Employee is Full Time");
+                        work_Hours = full_Day_Hours;
+                        daily_Employee_Wage = wage_Per_Hours * work_Hours;
+                        Console.WriteLine($" Day {i} Employee Wage = " + daily_Employee_Wage);
+                        break;
 
-                case 2:
+                    case 2:
 
-                    Console.WriteLine("Employee is Part Time");
-                    work_Hours = part_Time_Hours;
-                    daily_Employee_Wage = wage_Per_Hours * work_Hours ;
-                    Console.WriteLine($" Day {i} Employee Wage = " + daily_Employee_Wage);
-                    break;
-                default:
-                    Console.WriteLine("Employee is Absent");
-                    break;
+                        Console.WriteLine("Employee is Part Time");
+                        work_Hours = part_Time_Hours;
+                        daily_Employee_Wage = wage_Per_Hours * work_Hours;
+                        Console.WriteLine($" Day {i} Employee Wage = " + daily_Employee_Wage);
+                        break;
+                    default:
+                        Console.WriteLine("Employee is Absent");
+                        break;
+
                 }
-            totalMonthlyEmployeeWage += daily_Employee_Wage;
             }
-        Console.WriteLine(" Total Mothly employee wage = " + totalMonthlyEmployeeWage);
+            totalMonthlyEmployeeWage += daily_Employee_Wage;
+            total_hours += work_Hours;
         }
-    }  
+
+     
+                Console.WriteLine("Total hours Worked = " +total_hours);
+                Console.WriteLine(" Total Mothly employee wage = " + totalMonthlyEmployeeWage);
+                      
+     } 
+}
+
+  
 
