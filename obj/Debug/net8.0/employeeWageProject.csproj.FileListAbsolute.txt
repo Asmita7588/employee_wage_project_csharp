@@ -12,3 +12,4 @@ C:\Users\asmita1\source\repos\Bridgelabz_practice_program\employeeWageProject\em
 C:\Users\asmita1\source\repos\Bridgelabz_practice_program\employeeWageProject\employeeWageProject\obj\Debug\net8.0\employeeWageProject.pdb
 C:\Users\asmita1\source\repos\Bridgelabz_practice_program\employeeWageProject\employeeWageProject\obj\Debug\net8.0\employeeWageProject.genruntimeconfig.cache
 C:\Users\asmita1\source\repos\Bridgelabz_practice_program\employeeWageProject\employeeWageProject\obj\Debug\net8.0\ref\employeeWageProject.dll
+C:\Users\asmita1\source\repos\Bridgelabz_practice_program\employeeWageProject\employeeWageProject\obj\Debug\net8.0\employeeWageProject.sourcelink.json
